@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.1)
+project(face_detection)
+find_package(OpenCV 4 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIR}/opencv4)
+add_executable(${PROJECT_NAME} src/main.cpp)
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
