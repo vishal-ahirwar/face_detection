@@ -1,6 +1,9 @@
-cmake_minimum_required(VERSION 3.1)
-project(face_detection)
-find_package(OpenCV 4 REQUIRED)
-include_directories(${OpenCV_INCLUDE_DIR}/opencv4)
-add_executable(${PROJECT_NAME} src/main.cpp)
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+#Auto Generated Root CMake file by Sage
+#Copyright(c) 2025 None.All rights reerved.
+cmake_minimum_required(VERSION 3.6...3.31)
+project(face_detection VERSION 0.1.0 LANGUAGES CXX C)
+include(cmake/config.cmake)
+#@add_find_package Warning: Do not remove this line
+
+#@add_subproject Warning: Do not remove this line
+add_subdirectory(face_detection)

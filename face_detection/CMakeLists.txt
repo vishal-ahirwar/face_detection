@@ -1,0 +1,1 @@
+add_executable(face_detection src/main.cpp)
