@@ -65,11 +65,11 @@ while(true)
 
     faceDetector(img, faces, face_cascade);
 
-// Check if any faces were detected or not
-if (faces.size() == 0) {
-    cerr << "Cannot detect any faces in the image." << endl;
-    return -1;
-};
+    // Check if any faces were detected or not
+    // if (faces.size() == 0) {
+    //     cerr << "Cannot detect any faces in the image." << endl;
+    //     return -1;
+    // };
     imshow("web camera.",img);
     if(waitKey(10)==27)break;
 }
