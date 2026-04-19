@@ -1,9 +1,11 @@
-#Auto Generated Root CMake file by Sage
-#Copyright(c) 2025 None.All rights reerved.
-cmake_minimum_required(VERSION 3.6...3.31)
-project(face_detection VERSION 0.1.0 LANGUAGES CXX C)
-include(cmake/config.cmake)
-#@add_find_package Warning: Do not remove this line
-find_package(OpenCV)
-#@add_subproject Warning: Do not remove this line
-add_subdirectory(face_detection)
+cmake_minimum_required(VERSION 3.15)
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
+include(tools.config)
+project(face_detection VERSION 0.1.0 LANGUAGES CXX)
+include(app.config)
+
+if(BUILD_APPLICATION)
+    add_subdirectory(apps)
+endif()
+
+add_subdirectory(libs)

@@ -1,0 +1,6 @@
+add_library(face_detectionlib src/face_detectionlib.cpp)
+find_package(opencv)
+target_include_directories(face_detectionlib PUBLIC include)
+target_link_libraries(face_detectionlib PRIVATE opencv::opencv)
+install(TARGETS face_detectionlib)
+install(DIRECTORY include/ DESTINATION include/face_detectionlib)
